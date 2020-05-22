@@ -28,8 +28,8 @@ const NavBar = (props) => {
                     <img
                         alt=""
                         src={logo}
-                        width="165"
-                        height="40"
+                        width="185"
+                        height="50"
                         className="d-inline-block align-top"
                     />
                 </NavbarBrand>
@@ -70,11 +70,32 @@ const NavBar = (props) => {
                             </DropdownMenu>
                         </UncontrolledDropdown>
                         <NavItem className={styles.items}>
-                            <NavLink href="/components/">Add resources</NavLink>
+                            <NavLink target="_blank" href="https://covid-19library.org/resource/create/1/">Add resources</NavLink>
                         </NavItem>
                         <NavItem className={styles.items}>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">Help</NavLink>
+                            <NavLink target="_blank" href="https://covid-19library.org/profile/register/">Register</NavLink>
                         </NavItem>
+                        <UncontrolledDropdown nav inNavbar>
+                            <DropdownToggle nav caret className={styles.items}>
+                                Help
+              </DropdownToggle>
+                            <DropdownMenu right>
+                                <DropdownItem>
+                                    How to use COVID-19 Library
+                </DropdownItem>
+                                <DropdownItem>
+                                    Resource Guidelines
+                </DropdownItem>
+                                {/* //Use this for horizontal line <DropdownItem divider /> */}
+                                <DropdownItem>
+                                    Content Review Process
+                </DropdownItem>
+                                <DropdownItem>
+                                    Creative Commons FAQs
+                </DropdownItem>
+
+                            </DropdownMenu>
+                        </UncontrolledDropdown>
 
                     </Nav>
                     {/* <NavbarText>Simple Text</NavbarText> */}

@@ -7,109 +7,91 @@ const Categories = () => {
 
     return (
         <div className={styles.container}>
-            <Grid container spacing={2} justify="center">
-                <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.emergency)}>
-                    <CardContent>
-                        <Typography className={cx(styles.font)} gutterBottom>Infected</Typography>
-                        <Typography variant="h5">
+            <Grid container spacing={1} justify="end">
+                <div className="row"> <h2 style={{ marginLeft: ".5rem" }}>Categories</h2></div>
+                <div className="row">
+                    <Grid item component={Card} xs={12} s={6} md={3} className={cx(styles.card, styles.emergency)}>
+                        <CardContent>
 
+                            <Typography className={styles.categoryTitle}>
+                                Emergency Response
                         </Typography>
-                        <Typography style={{ fontWeight: "bold", color: "whitesmoke" }}>
-                            look
+
+                        </CardContent>
+                    </Grid>
+
+                    <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.risk)}>
+                        <CardContent>
+
+
+                            <Typography className={styles.categoryTitle}>
+                                Risk communication & community engagement
                         </Typography>
-                        <Typography variant="body2">Number of </Typography>
-                    </CardContent>
-                </Grid>
 
-                <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.risk)}>
-                    <CardContent>
-                        <Typography className={cx(styles.font)} gutterBottom>Recovered</Typography>
+                        </CardContent>
+                    </Grid>
 
-                        <Typography style={{ fontWeight: "bold", color: "whitesmoke" }}>
-                            look
+                    <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.casefinding)}>
+                        <CardContent>
+                            <Typography className={styles.categoryTitle}>
+                                Case finding, contact tracing & management
                         </Typography>
-                        <Typography variant="body2">Number of </Typography>
-                    </CardContent>
-                </Grid>
 
-                <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.casefinding)}>
-                    <CardContent>
-                        <Typography className={cx(styles.font)} gutterBottom>Deaths</Typography>
-
-                        <Typography style={{ fontWeight: "bold", color: "whitesmoke" }}>
-                            look
+                        </CardContent>
+                    </Grid>
+                    <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.surveillance)}>
+                        <CardContent>
+                            <Typography className={styles.categoryTitle}>
+                                Surveillance
                         </Typography>
-                        <Typography variant="body2">Number of</Typography>
-                    </CardContent>
-                </Grid>
-                <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.surveillence)}>
-                    <CardContent>
-                        <Typography className={cx(styles.font)} gutterBottom>Infected</Typography>
-                        <Typography variant="h5">
 
+                        </CardContent>
+                    </Grid>
+
+                    <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.ph)}>
+                        <CardContent>
+                            <Typography className={styles.categoryTitle}>
+                                Public health prevention measures
                         </Typography>
-                        <Typography style={{ fontWeight: "bold", color: "whitesmoke" }}>
-                            look
+
+                        </CardContent>
+                    </Grid>
+
+                    <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.infection)}>
+                        <CardContent>
+                            <Typography className={styles.categoryTitle}>
+                                Infection prevention & control
                         </Typography>
-                        <Typography variant="body2">Number of </Typography>
-                    </CardContent>
-                </Grid>
 
-                <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.ph)}>
-                    <CardContent>
-                        <Typography className={cx(styles.font)} gutterBottom>Recovered</Typography>
-
-                        <Typography style={{ fontWeight: "bold", color: "whitesmoke" }}>
-                            look
+                        </CardContent>
+                    </Grid>
+                    <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.lab)}>
+                        <CardContent>
+                            <Typography className={styles.categoryTitle}>
+                                Lab testing
                         </Typography>
-                        <Typography variant="body2">Number of</Typography>
-                    </CardContent>
-                </Grid>
 
-                <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.infection)}>
-                    <CardContent>
-                        <Typography className={cx(styles.font)} gutterBottom>Deaths</Typography>
+                        </CardContent>
+                    </Grid>
 
-                        <Typography style={{ fontWeight: "bold", color: "whitesmoke" }}>
-                            look
+                    <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.casemgt)}>
+                        <CardContent>
+                            <Typography className={styles.categoryTitle}>
+                                Case management & hospital response
                         </Typography>
-                        <Typography variant="body2">Number of</Typography>
-                    </CardContent>
-                </Grid>
-                <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.lab)}>
-                    <CardContent>
-                        <Typography sclassName={cx(styles.font)} gutterBottom>Infected</Typography>
-                        <Typography variant="h5">
 
+                        </CardContent>
+                    </Grid>
+
+                    <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.societal)}>
+                        <CardContent>
+                            <Typography className={styles.categoryTitle}>
+                                Societal response
                         </Typography>
-                        <Typography style={{ fontWeight: "bold", color: "whitesmoke" }}>
-                            look
-                        </Typography>
-                        <Typography variant="body2">Number of </Typography>
-                    </CardContent>
-                </Grid>
 
-                <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.casemgt)}>
-                    <CardContent>
-                        <Typography className={cx(styles.font)} gutterBottom>Recovered</Typography>
-
-                        <Typography style={{ fontWeight: "bold", color: "whitesmoke" }}>
-                            look
-                        </Typography>
-                        <Typography variant="body2">Number of </Typography>
-                    </CardContent>
-                </Grid>
-
-                <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.societal)}>
-                    <CardContent>
-                        <Typography className={cx(styles.font)} gutterBottom>Deaths</Typography>
-
-                        <Typography style={{ fontWeight: "bold", color: "whitesmoke" }}>
-                            look
-                        </Typography>
-                        <Typography variant="body2">Number of </Typography>
-                    </CardContent>
-                </Grid>
+                        </CardContent>
+                    </Grid>
+                </div>
             </Grid>
         </div>
     )

@@ -1,15 +1,10 @@
 /* To center nav items  */
-.center {   
-    justify-content: center !important;    
-}
+.center {justify-content: center !important;}
 
-.logo {margin-left: 3rem;}
+/* Spacing nav items across center */
+.items {margin-right: 4rem !important;}
 
-.items {
-   margin-right: 6rem !important;
-   
-    
-}
+.logo {margin-left: 110px;}
 
 .nav-link:hover {color: #ff4a2f !important;}
 

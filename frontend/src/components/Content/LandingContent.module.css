@@ -1,0 +1,15 @@
+.container {
+    margin: 3rem 0 50px 141px;
+}
+/* 
+.content {margin-left: 141px;}
+  */
+    
+    
+    @media (max-width: 770px){
+        
+        .container {
+            margin: 1rem;
+            }
+        
+}

@@ -1,0 +1,81 @@
+.container {
+    margin: 3rem 0 50px 0;
+    }
+
+
+    
+.card, .font {
+    margin: 1rem 2% !important;
+    font-weight: bold !important;
+    color: #ffffff !important;
+}
+
+    
+.font {  
+    color: #ffffff !important;
+}
+    
+    .emergency {    
+    background-color: #84c1bc !important;
+    color: whitesmoke !important;
+    font-weight: bold !important;    
+    }
+
+    .risk {   
+    background-color: #f7cb0f !important;
+    color: whitesmoke !important;
+    font-weight: bold !important;    
+    }
+    
+    .casefinding {   
+    background-color: #179c48 !important;
+    color: whitesmoke !important;    
+    }
+
+    .surveillance {       
+    background-color: #d04e37 !important;
+    color: whitesmoke !important;
+    font-weight: bold !important;        
+    }
+
+    .ph {      
+    background-color: #f289b7 !important;
+    color: whitesmoke !important;
+    font-weight: bold !important;        
+    }
+        
+    .infection {
+    background-color: #7ed5f4 !important;
+    color: whitesmoke !important;    
+    }
+
+    .lab {       
+        background-color: #b2db6d !important;
+        color: whitesmoke !important;
+        font-weight: bold !important;        
+        }
+    
+        .casemgt {      
+        background-color: #3462ad !important;
+        color: whitesmoke !important;
+        font-weight: bold !important;        
+        }
+            
+        .societal {
+        background-color: #b24188 !important;
+        color: whitesmoke !important;    
+        }
+        
+    
+    
+    
+    @media (max-width: 770px){
+        .card {
+            margin: 2% 0 !important;
+        }
+    
+        .container {
+            margin: 1rem;
+            }
+        
+    }

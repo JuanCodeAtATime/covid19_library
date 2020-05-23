@@ -16,6 +16,7 @@ import {
 } from 'reactstrap';
 import styles from './Navbar.module.css';
 
+
 const NavBar = (props) => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -23,7 +24,7 @@ const NavBar = (props) => {
 
     return (
         <div>
-            <Navbar style={{ backgroundColor: "ffffff" }} light expand="md">
+            <Navbar className={styles.navbar} light expand="md">
                 <NavbarBrand href="/" className={styles.logo}>
                     <img
                         alt=""
@@ -70,12 +71,14 @@ const NavBar = (props) => {
                             </DropdownMenu>
                         </UncontrolledDropdown>
                         <NavItem className={styles.items}>
-                            <NavLink target="_blank" href="https://covid-19library.org/resource/create/1/">Add resources</NavLink>
+                            <NavLink target="_blank" rel="noopener noreferrer"
+                                href="https://covid-19library.org/resource/create/1/">Add resources</NavLink>
                         </NavItem>
                         <NavItem className={styles.items}>
-                            <NavLink target="_blank" href="https://covid-19library.org/profile/register/">Register</NavLink>
+                            <NavLink target="_blank" rel="noopener noreferrer"
+                                href="https://covid-19library.org/profile/register/">Register</NavLink>
                         </NavItem>
-                        <UncontrolledDropdown nav inNavbar>
+                        <UncontrolledDropdown nav inNavbar style={{ marginRight: "1rem" }}>
                             <DropdownToggle nav caret className={styles.items}>
                                 Help
               </DropdownToggle>
@@ -98,7 +101,8 @@ const NavBar = (props) => {
                         </UncontrolledDropdown>
 
                     </Nav>
-                    {/* <NavbarText>Simple Text</NavbarText> */}
+                    <NavbarText className={styles.registerBtn}>Register</NavbarText>
+                    <NavbarText className={styles.loginBtn}>Login</NavbarText>
                 </Collapse>
             </Navbar>
         </div>

@@ -2,11 +2,12 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import styles from './Footer.module.css';
+import cx from 'classnames';
 
 const Footer = () => {
     return (
-        <div className={styles.container}>
-            <MDBFooter color="blue" className="font-small pt-4 mt-4">
+        <div className={styles.wrapper}>
+            <MDBFooter color="blue" className={cx(styles.container, `font-small pt-4 mt-4`)}>
                 <MDBContainer fluid className="text-center text-md-left">
                     <MDBRow>
                         <MDBCol md="3">
@@ -17,26 +18,33 @@ const Footer = () => {
                         </MDBCol>
                         <MDBCol md="3">
                             <h6 className="title">Follow Us</h6>
-                            <p style={{ marginBottom: "0px" }}><a target="_blank" href="https://twitter.com/lastmilehealth">Twitter</a></p>
-                            <p> <a target="_blank" href="https://lastmilehealth.org/what-we-do/community-health-academy/">Website</a></p>
+                            <p style={{ marginBottom: "0px" }}><a className={styles.footer} target="_blank" rel="noopener noreferrer"
+                                href="https://twitter.com/lastmilehealth">Twitter</a></p>
+                            <p> <a className={styles.footer} target="_blank" rel="noopener noreferrer"
+                                href="https://lastmilehealth.org/what-we-do/community-health-academy/">Website</a></p>
                         </MDBCol>
                         <MDBCol md="3">
                             <h6 className="title">About</h6>
                             <ul>
                                 <li className="list-unstyled">
-                                    <a target="_blank" href="https://covid-19library.org/about/">About COVID-19 Digital Classroom</a>
+                                    <a className={styles.footer} target="_blank" rel="noopener noreferrer"
+                                        href="https://covid-19library.org/about/">About COVID-19 Digital Classroom</a>
                                 </li>
                                 <li className="list-unstyled">
-                                    <a target="_blank" href="#!">How to use COVID-19 Library</a>
+                                    <a className={styles.footer} target="_blank" rel="noopener noreferrer"
+                                        href="#!">How to use COVID-19 Library</a>
                                 </li>
                                 <li className="list-unstyled">
-                                    <a target="_blank" href="#!">Creative Commons FAQs</a>
+                                    <a className={styles.footer} target="_blank" rel="noopener noreferrer"
+                                        href="#!">Creative Commons FAQs</a>
                                 </li>
                                 <li className="list-unstyled">
-                                    <a target="_blank" href="#!">Resource Guidelines</a>
+                                    <a className={styles.footer} target="_blank" rel="noopener noreferrer"
+                                        href="#!">Resource Guidelines</a>
                                 </li>
                                 <li className="list-unstyled">
-                                    <a target="_blank" href="#!">Content Review Proces</a>
+                                    <a className={styles.footer} target="_blank" rel="noopener noreferrer"
+                                        href="#!">Content Review Proces</a>
                                 </li>
                             </ul>
                         </MDBCol>

@@ -1,13 +1,28 @@
+
+.wrapper {
+ border-top: solid 1px #c4c4c4 !important;    
+ position: relative !important;
+ left:0 !important;
+ bottom:0 !important;
+ right:0 !important;
+}
+
 .container {
-    margin: auto 3rem 2rem 110px !important;
-   
+    margin: 2rem 2rem 1rem 141px !important;   
 }
 
-p {
-    color: #164780 !important;
-    text-decoration: none !important;
-
+p, a.footer:visited, a.footer:hover, a.footer:link {
+  color: #164780 !important;
+  text-decoration: none !important;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  font-size: 14px;
 }
+
+
 ul {   
   padding-left: 0;
 }

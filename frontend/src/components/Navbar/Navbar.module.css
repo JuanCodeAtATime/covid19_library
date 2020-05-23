@@ -1,8 +1,45 @@
 /* To center nav items  */
+.navbar{
+    background-color: #ffffff !important;
+    border-bottom: solid 1px rgba(137, 143, 153, 0.21) !important;    
+}
+
+.loginBtn {
+  width: 70px;
+  height: 30px;
+  border-radius: 2px;
+  text-align: center; 
+  color: #ffffff !important;
+  background-color: #164780;
+  cursor: pointer; 
+  margin-left: 45px !important;
+  font-size: 14px !important;
+  font-weight: 600;
+ padding-top: .5rem;
+ line-height: 1;
+
+}
+
+.registerBtn {
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #164780 !important;
+}
+
 .center {justify-content: center !important;}
 
 /* Spacing nav items across center */
-.items {margin-right: 4rem !important;}
+.items, .items:visited, .item:hover, .items:link, .items:active {
+margin-right: 4rem !important;
+font-size: 14px !important;
+color: #141414 !important;
+text-decoration: none !important;
+font-weight: 500;
+}
 
 .logo {margin-left: 110px;}
 

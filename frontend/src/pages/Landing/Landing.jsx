@@ -11,10 +11,14 @@ const Landing = () => {
         <div className={styles.container}>
             <div className="container ml-0">
                 <div className="row top">
-                    <div className="col-lg col-md col-sm col-">
+                    <div className="col-lg col-md col-sm col- left">
                         <LandingContent />
                     </div>
-                    <div className="col-lg col-md col-sm col-">
+                    <div className="col-lg col-md col-sm col- rightColumn"
+                        style={{
+                            width: "100%",
+                            marginLeft: "0"
+                        }}>
                         <Categories />
                     </div>
 

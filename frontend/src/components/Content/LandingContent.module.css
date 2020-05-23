@@ -1,5 +1,9 @@
 .container {
-    margin: 3rem 0 50px 141px;
+    margin: 3rem 0 0 141px;   
+}
+
+.advancedSearch {
+  margin-bottom: 70px !important;
 }
 /* 
 .content {margin-left: 141px;}

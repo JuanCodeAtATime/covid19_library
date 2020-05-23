@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Gilroy', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,11 +10,11 @@ code {
     monospace;
 }
 
-h2 {
-  
+h2 {  
   color: #262626;
 }
 
+/* Landing page content row */
 .COVID-19-Library-off {
   width: 412px !important;
   height: 100px !important;  
@@ -24,10 +22,18 @@ h2 {
   line-height: 1.56 !important;
   letter-spacing: normal;
   color: #262626 !important;
+  margin-bottom: 40.7px;
 }
+
+.rightColumn {
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+ 
+}
+
 
 .landingColLeft {text-align: left;}
 
-.top {
-  padding-top: 93.4px;
+.left { 
+  background-color: #ffffff;  
 }

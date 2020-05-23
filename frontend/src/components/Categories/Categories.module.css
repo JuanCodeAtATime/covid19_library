@@ -1,8 +1,9 @@
 .container {
-    margin: 3rem 0 50px 0 !important;
-  
-    
-    
+    margin: 3rem 0 0 0 !important;    
+}
+
+.padding {
+    margin: auto 140px 120px 140px !important;
 }
 
     
@@ -10,21 +11,45 @@
     margin: .5rem .5rem !important;
     font-weight: bold !important;
     height: 165.9px !important;
-    width: 165.9px !important;
+    /* min-height: 165.9px !important; */
+    min-width: 165.9px !important;
+    /* min-width: 165.9px !important; */
     color: #ffffff !important;
     border-radius: 1px !important;
+    position: relative;
+}
+
+.icons {
+    height: 55px;
+    width: 55px;
+    color: #ffffff;
+    margin-bottom: 14.9px;
 }
 
 .categoryTitle {
-    margin-top: 4rem !important;
+    /* margin-top: 4rem !important; */
     width: 118.1px !important;          
-    font-size: .90rem !important;
-    font-weight: 600 !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
     font-stretch: normal !important;
     font-style: normal !important;
     line-height: 1.11 !important;
     letter-spacing: normal !important;
     color: #ffffff !important;
+  }
+
+  .resourcesQty {
+    font-size: 12px !important;
+    font-weight: normal !important;
+    font-stretch: normal;
+    font-style: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal;
+    color: #ffffff !important;
+    margin-bottom: 5px !important;
+    bottom: 0 !important;    
+    vertical-align: bottom !important;
+    position: absolute !important;
   }
     
     .emergency {    
@@ -86,6 +111,7 @@
     @media (max-width: 770px){
         .card {
             margin: 2% 0 !important;
+           
         }
     
         .container {
@@ -93,3 +119,5 @@
             }
         
     }
+
+    

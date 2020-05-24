@@ -1,9 +1,17 @@
 body {
   margin: 0;
-  font-family: 'Gilroy', sans-serif;
+  /* font-family: 'Gilroy', sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: Gilroy;
 }
+
+@font-face {
+  font-family: Gilroy;
+  src: url(https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css);
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -28,12 +36,21 @@ h2 {
 .rightColumn {
   margin-right: 0 !important;
   padding-right: 0 !important;
+  /* min-width: 819px !important; */
  
 }
 
 
 .landingColLeft {text-align: left;}
 
+/* Landing Page left column */
 .left { 
   background-color: #ffffff;  
+  /* min-width: 621px !important; */
 }
+
+/* Browse Resources page right column  */
+.browseRight {
+  width: 100% !important;
+  
+ } 

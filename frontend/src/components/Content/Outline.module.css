@@ -1,0 +1,27 @@
+.container {
+    margin: 3rem 0 0 141px;   
+}
+
+.outlinePara {
+    font-size: 13px !important;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.85 !important;
+    letter-spacing: normal;
+    color: #000000 !important;
+
+
+}
+/* 
+.content {margin-left: 141px;}
+  */
+    
+    
+    @media (max-width: 770px){
+        
+        .container {
+            margin: 1rem;
+            }
+        
+}

@@ -43,9 +43,10 @@ const NavBar = (props) => {
                                 Browse Resources
               </DropdownToggle>
                             <DropdownMenu right>
-                                <DropdownItem>
+
+                                <DropdownItem href="/labTesting">
                                     Emergency Response
-                </DropdownItem>
+                                </DropdownItem>
                                 <DropdownItem>
                                     Risk Management & Community Engagement
                 </DropdownItem>

@@ -7,23 +7,25 @@
 }    
 
 .card {
-    margin: .5rem .5rem !important;
+    margin: .5rem .5rem 2rem 0 !important;
     font-weight: bold !important;
-    height: 165.9px !important;
+    height: 248px !important;
     /* min-height: 165.9px !important; */
-    min-width: 165.9px !important;
+    min-width: 672px !important;
     /* min-width: 165.9px !important; */
-    color: #ffffff !important;
+    background-color: #ffffff !important;
     border-radius: 1px !important;
     position: relative;
     cursor: pointer;
 }
 
 .icons {
-    height: 55px;
-    width: 55px;
-    color: #ffffff;
+    height: 44px;
+    width: 44px;
+    margin-right: 12.5px !important;
+    background-color: #b2db6d !important;
     margin-bottom: 14.9px;
+    float: left;
 }
 
 .addResource {
@@ -36,14 +38,14 @@
 
 .categoryTitle {
     /* margin-top: 4rem !important; */
-    width: 118.1px !important;          
-    font-size: 13px !important;
-    font-weight: bold !important;
-    font-stretch: normal !important;
-    font-style: normal !important;
-    line-height: 1.11 !important;
-    letter-spacing: normal !important;
-    color: #ffffff !important;
+  font-size: 17px !important;
+  font-weight: bold !important;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #2f2f2f !important;
+  float: left;
   }
 
   .resourcesQty {
@@ -60,20 +62,13 @@
     position: absolute !important;
   }
     
-    .emergency {    
-    background-color: #84c1bc !important;
+    .emergency, .risk {    
+    background-color: #ffffff !important;
     color: whitesmoke !important;
     font-weight: bold !important; 
    
     }
-
  
-
-    .risk {   
-    background-color: #f7cb0f !important;
-    color: whitesmoke !important;
-    font-weight: bold !important;    
-    }
     
     .casefinding {   
     background-color: #179c48 !important;

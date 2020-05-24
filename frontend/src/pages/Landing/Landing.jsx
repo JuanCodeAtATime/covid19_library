@@ -14,7 +14,7 @@ const Landing = () => {
                     <div className="col-lg col-md col-sm col- left">
                         <LandingContent />
                     </div>
-                    <div className="col-lg col-md col-sm col- rightColumn"
+                    <div className="col-lg col-md col-sm col- right"
                         style={{
                             width: "100%",
                             marginLeft: "0"

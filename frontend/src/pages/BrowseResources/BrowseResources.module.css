@@ -1,0 +1,60 @@
+.container {   
+    background-color: #f5f5f5;    
+    height: 825px;
+    width: 100%;    
+    /* margin-left: 0 !important; */
+
+} 
+
+.coloredBar {
+  width: 100%;
+  height: 120px;
+  background-color: #b2db6d;
+  margin: auto !important;
+
+
+}
+
+.resourceTitle {    
+    /* font-family: Gilroy; */
+    font-size: 24px !important;
+    font-weight: bold !;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff !important;
+    margin: auto;
+    vertical-align: middle !important;
+    padding-top: 2.5rem !important; 
+    margin-left: 130px;
+    
+  }
+
+  .resourceCount {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  margin-left: 130px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff !important;  
+  }
+    
+    
+  @media (max-width: 770px){
+        .card {
+            margin: 2% 0 !important;
+        }
+    
+        .container {
+            margin: 1rem;
+            }
+
+       .resourceTitle, .resourceCount {
+           margin-left: .75rem;
+       }
+        
+    }
+    

@@ -4,6 +4,8 @@
     border-bottom: solid 1px rgba(137, 143, 153, 0.21) !important;    
 }
 
+
+/* blue login button, change to display none when collapsed */
 .loginBtn {
   width: 70px;
   height: 30px;

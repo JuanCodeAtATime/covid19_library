@@ -54,3 +54,17 @@ h2 {
   width: 100% !important;
   
  } 
+
+ /* Resources cards header titles */
+.MuiCardHeader-title {
+  font-size: 1.2rem !important;
+  margin-top: 0 !important;   
+  font-weight: bold !important;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal !important;
+  letter-spacing: normal;
+  color: #2f2f2f !important;
+}
+
+.MuiCardHeader-root, .ResourcesCards_header__2CmNK {padding-top: 0rem !important;}

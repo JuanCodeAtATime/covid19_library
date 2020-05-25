@@ -44,7 +44,7 @@ const NavBar = (props) => {
               </DropdownToggle>
                             <DropdownMenu right>
 
-                                <DropdownItem href="/labTesting">
+                                <DropdownItem href="/emergency">
                                     Emergency Response
                                 </DropdownItem>
                                 <DropdownItem>
@@ -60,7 +60,7 @@ const NavBar = (props) => {
                                 <DropdownItem>
                                     Infection Prevention and Control
                 </DropdownItem>
-                                <DropdownItem>
+                                <DropdownItem href="/labTesting">
                                     Lab Testing
                 </DropdownItem>
                                 <DropdownItem>

@@ -6,11 +6,11 @@ import Outline from '../../components/Content/Outline';
 
 import cx from 'classnames';
 
-const LabTesting = () => {
+const Emergency = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.coloredBar}>
-                <h1 className={styles.resourceTitle}>Lab Testing</h1>
+            <div className={styles.emergencyColoredBar}>
+                <h1 className={styles.resourceTitle}>Emergency Response</h1>
                 <p className={styles.resourceCount}>34 Resources</p>
             </div>
             <div className="container ml-0">
@@ -32,4 +32,4 @@ const LabTesting = () => {
     )
 }
 
-export default LabTesting;
+export default Emergency;

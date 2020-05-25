@@ -18,10 +18,10 @@ const Outline = () => {
                 </div>
                 <div className="row">
                     <p className={styles.outlinePara}>
-                        <b>1</b> {""}Countries with no cases (No Cases);<br></br>
-                        <b>2</b>  {""}Countries with 1 or more cases, imported or locally detected (Sporadic Cases);<br></br>
-                        <b>3</b>  {""}Countries experiencing clusters of cases related in time, geographic location, or common exposure (Clusters of cases);<br></br>
-                        <b>4</b>  {""}Countries experiencing larger outbreaks or sustained and pervasive local transmission (Community transmission).<br></br></p>
+                        <b>1</b> {'\u00A0'} Countries with no cases (No Cases);<br></br>
+                        <b>2</b> {'\u00A0'} Countries with 1 or more cases, imported or locally detected (Sporadic Cases);<br></br>
+                        <b>3</b> {'\u00A0'} Countries experiencing clusters of cases related in time, geographic location, or common exposure (Clusters of cases);<br></br>
+                        <b>4</b> {'\u00A0'} Countries experiencing larger outbreaks or sustained and pervasive local transmission (Community transmission).<br></br></p>
                 </div>
 
                 <div className="row">

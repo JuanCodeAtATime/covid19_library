@@ -3,8 +3,9 @@ import { Card, CardContent, CardHeader, CardActions, CardMedia, Typography, Grid
 import styles from './ResourcesCards.module.css';
 import cx from 'classnames';
 import TimerRoundedIcon from '@material-ui/icons/TimerRounded';
-import emergencyIcon from '../Categories/CatergoryIcons/emergency.svg';
-import risk from '../Categories/CatergoryIcons/risk.svg';
+import egypt from './CountriesFlags/egypt.svg';
+import eu from './CountriesFlags/eu.svg';
+import india from './CountriesFlags/india.svg';
 import Searchbar from '../SearchBar/Searchbar';
 import labTest from '../Categories/CatergoryIcons/lab.svg';
 
@@ -16,7 +17,8 @@ const ResourcesCards = () => {
             <Grid container spacing={1} justify="start" className={styles.padding}>
                 <div className="container">
                     <div className="row" style={{ marginBottom: "20.6px", marginTop: "45px" }}>
-                        <h2 style={{ fontWeight: "500" }}>Resources</h2>
+                        {/* Resources quantity, dynamically generated value? */}
+                        <h2 style={{ fontWeight: "500" }}>Resources <span>(34)</span></h2>
                     </div>
                     <div className="row" style={{ width: "450px" }}>
                         <Searchbar className={styles.searchBar} />
@@ -55,84 +57,163 @@ const ResourcesCards = () => {
                             <CardContent>
                                 <Typography className={styles.rectangleCardsContent}>
 
-                                    <ul className={styles.regionList}>
-                                        <li> <b>Region: </b></li>
-                                        <li><a href="#"> second region</a></li>
-                                        <li><a href="#"> third region</a></li>
-                                        {" "}
-                                        <b style={{ marginLeft: "1rem" }}>Language: </b>
-                                        <li><a href="#"> Arabic</a></li>
-                                        <li><a href="#"> English</a></li>
-                                        <li><a href="#"> German</a></li>
-                                        <li><a href="#"> Indian</a></li>
+                                    <ul>
+                                        <li> <b className={styles.regionList}>Region: </b></li>
+                                        <li><a
+                                            href="#"
+                                            className={styles.flagIconsEg}
+                                            image={egypt}>
+                                        </a></li>
+                                        <li><a
+                                            href="#"
+                                            className={styles.flagIconsEu}
+                                            image={eu}>
+                                        </a></li>
+                                        <li><a
+                                            href="#"
+                                            className={styles.flagIconsIn}
+                                            image={india}>
+                                        </a></li>
+
+                                        <b style={{ marginLeft: "1rem", marginRight: ".5rem" }}>Language: </b>
+                                        <li> Arabic </li><span className={styles.languageSpan}> &#8226; </span>
+                                        <li> English </li><span className={styles.languageSpan}> &#8226; </span>
+                                        <li> German </li><span className={styles.languageSpan}> &#8226; </span>
+                                        <li> Indian </li>
+
+
                                     </ul>
+
+
+
+                                </Typography>
+                            </CardContent>
+                        </Grid>
+
+                        <Grid item component={Card} xs={12} s={12} md={12} className={cx(styles.card, styles.emergency)}>
+                            {/* Time burden dynamically generated value? */}
+                            <p className={styles.stopwatch}> <TimerRoundedIcon /><span className={styles.timeBurden}>1 min</span></p>
+                            <CardHeader
+                                className={styles.header}
+                                avatar={
+                                    <CardMedia
+                                        className={styles.icons}
+                                        image={labTest}
+                                        title="Paella dish"
+                                    ></CardMedia>
+                                }
+
+                                title="Our Heroes Day"
+                                subheader="Job Aid from Stanford Center for Health Education"
+                            />
+
+                            <hr className={styles.hrTop}></hr>
+                            <CardContent>
+                                <Typography className={styles.rectangleCardsContent}>
+                                    The title is West African Pidgin English, meaning 'our heroes are still with us'.
+                                    The message of the threat of Covid-19 is delivered to the African continent by
+                                    historic black icons, encouraging everybody to be heroes.
+                            </Typography>
+                            </CardContent>
+                            <hr className={styles.hrTop}></hr>
+                            <CardContent>
+                                <Typography className={styles.rectangleCardsContent}>
+
+                                    <ul>
+                                        <li> <b className={styles.regionList}>Region: </b></li>
+                                        <li><a
+                                            href="#"
+                                            className={styles.flagIconsEg}
+                                            image={egypt}>
+                                        </a></li>
+                                        <li><a
+                                            href="#"
+                                            className={styles.flagIconsEu}
+                                            image={eu}>
+                                        </a></li>
+                                        <li><a
+                                            href="#"
+                                            className={styles.flagIconsIn}
+                                            image={india}>
+                                        </a></li>
+
+
+                                        <b style={{ marginLeft: "1rem", marginRight: ".5rem" }}>Language: </b>
+                                        <li> Arabic </li><span className={styles.languageSpan}> &#8226; </span>
+                                        <li> English </li><span className={styles.languageSpan}> &#8226; </span>
+                                        <li> German </li><span className={styles.languageSpan}> &#8226; </span>
+                                        <li> Indian </li>
+                                    </ul>
+
+
 
                                 </Typography>
                             </CardContent>
                         </Grid>
 
 
-
-
-
-
-
-
-
-
-                        <Grid item component={Card} xs={12} s={12} md={12} className={cx(styles.card, styles.risk)}>
-                            <CardContent>
-                                <CardMedia
-                                    className={styles.icons}
-                                    image={risk}
-                                    title="Risk Communication icon"
-                                />
-                                <Typography className={styles.categoryTitle}>
-                                    Risk communication & community engagement
-                        </Typography>
-                                <Typography className={styles.resourcesQty}>
-                                    29 Resources
-                        </Typography>
-
-                            </CardContent>
-                        </Grid>
                         <Grid item component={Card} xs={12} s={12} md={12} className={cx(styles.card, styles.emergency)}>
+                            {/* Time burden dynamically generated value? */}
+                            <p className={styles.stopwatch}> <TimerRoundedIcon /><span className={styles.timeBurden}>1 min</span></p>
+                            <CardHeader
+                                className={styles.header}
+                                avatar={
+                                    <CardMedia
+                                        className={styles.icons}
+                                        image={labTest}
+                                        title="Paella dish"
+                                    ></CardMedia>
+                                }
+
+                                title="Our Heroes Day"
+                                subheader="Job Aid from Stanford Center for Health Education"
+                            />
+
+                            <hr className={styles.hrTop}></hr>
                             <CardContent>
-                                <CardMedia
-                                    className={styles.icons}
-                                    image={emergencyIcon}
-                                    title="Paella dish"
-                                />
-
-                                <Typography className={styles.categoryTitle}>
-                                    Emergency Response
-                        </Typography>
-
-                                <Typography className={styles.resourcesQty}>
-                                    0 Resources
-                        </Typography>
+                                <Typography className={styles.rectangleCardsContent}>
+                                    The title is West African Pidgin English, meaning 'our heroes are still with us'.
+                                    The message of the threat of Covid-19 is delivered to the African continent by
+                                    historic black icons, encouraging everybody to be heroes.
+                            </Typography>
                             </CardContent>
+                            <hr className={styles.hrTop}></hr>
+                            <CardContent>
+                                <Typography className={styles.rectangleCardsContent}>
 
+                                    <ul>
+                                        <li> <b className={styles.regionList}>Region: </b></li>
+                                        <li><a
+                                            href="#"
+                                            className={styles.flagIconsEg}
+                                            image={egypt}>
+                                        </a></li>
+                                        <li><a
+                                            href="#"
+                                            className={styles.flagIconsEu}
+                                            image={eu}>
+                                        </a></li>
+                                        <li><a
+                                            href="#"
+                                            className={styles.flagIconsIn}
+                                            image={india}>
+                                        </a></li>
+
+
+                                        <b style={{ marginLeft: "1rem", marginRight: ".5rem" }}>Language: </b>
+                                        <li> Arabic </li><span className={styles.languageSpan}> &#8226; </span>
+                                        <li> English </li><span className={styles.languageSpan}> &#8226; </span>
+                                        <li> German </li><span className={styles.languageSpan}> &#8226; </span>
+                                        <li> Indian </li>
+                                    </ul>
+
+
+
+                                </Typography>
+                            </CardContent>
                         </Grid>
 
-                        <Grid item component={Card} xs={12} s={12} md={12} className={cx(styles.card, styles.emergency)}>
-                            <CardContent>
-                                <CardMedia
-                                    className={styles.icons}
-                                    image={emergencyIcon}
-                                    title="Paella dish"
-                                />
 
-                                <Typography className={styles.categoryTitle}>
-                                    Emergency Response
-                        </Typography>
-
-                                <Typography className={styles.resourcesQty}>
-                                    0 Resources
-                        </Typography>
-                            </CardContent>
-
-                        </Grid>
 
                     </div>
                 </div>

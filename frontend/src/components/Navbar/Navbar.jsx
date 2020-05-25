@@ -44,29 +44,29 @@ const NavBar = (props) => {
               </DropdownToggle>
                             <DropdownMenu right>
 
-                                <DropdownItem href="/emergency">
+                                <DropdownItem href="/emergency-response">
                                     Emergency Response
                                 </DropdownItem>
-                                <DropdownItem>
+                                <DropdownItem href="/risk-communication">
                                     Risk Management & Community Engagement
                 </DropdownItem>
                                 {/* //Use this for horizontal line <DropdownItem divider /> */}
-                                <DropdownItem>
+                                <DropdownItem href="/case-finding">
                                     Case Finding, Contact Tracing & Management
                 </DropdownItem>
-                                <DropdownItem>
+                                <DropdownItem href="/public-health-prevention">
                                     Public Health Prevention Measures
                 </DropdownItem>
-                                <DropdownItem>
+                                <DropdownItem href="/infection-prevention">
                                     Infection Prevention and Control
                 </DropdownItem>
-                                <DropdownItem href="/labTesting">
+                                <DropdownItem href="/lab-testing">
                                     Lab Testing
                 </DropdownItem>
-                                <DropdownItem>
+                                <DropdownItem href="/case-management-hospital-response">
                                     Case Management and Hospital Response
                 </DropdownItem>
-                                <DropdownItem>
+                                <DropdownItem href="/societal-response">
                                     Societal Response
                 </DropdownItem>
                             </DropdownMenu>

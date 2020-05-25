@@ -1,9 +1,10 @@
 .container {
-    margin: 3rem 0 0 0 !important;    
+    margin: 3rem 0 0 0 !important;
+    border-left: solid #d6d6d6 1px;    
 }
 
 .padding {
-    margin: auto 140px 120px 140px !important;
+    margin: 0 0 140px 60px !important;
 }    
 
 /* Stopwatch Icon */
@@ -21,7 +22,7 @@
     /* min-width: 165.9px !important; */
     background-color: #ffffff !important;
     border-radius: 1px !important;
-    position: relative;    
+    /* position: relative;     */
 }
 
 /* Card header title */
@@ -43,18 +44,59 @@
     margin-top: 1rem !important;
 }
 
+/* Region flag icons */
+
+.flagIconsEg{
+    height: 30px;
+    width: 30px;  
+    margin-right: .5rem;      
+    display: inline-block !important;
+    vertical-align: center !important;
+    background-image: url(./CountriesFlags/egypt.svg);   
+    border-radius: 50%;
+}
+.flagIconsEu{
+    height: 30px;
+    width: 30px;  
+    margin-right: .5rem;      
+    display: inline-block !important;
+    vertical-align: center !important;
+    background-image: url(./CountriesFlags/eu.svg);   
+    border-radius: 50%;
+}
+
+.flagIconsIn{
+    height: 30px;
+    width: 30px;  
+    margin-right: .5rem;      
+    display: inline-block !important;
+    vertical-align: center !important;
+    background-image: url(./CountriesFlags/india.svg);   
+    border-radius: 50%;
+}
+
+/* Languge list items, span space between  */
+.languageSpan {
+    margin: auto .6rem;
+}
+
+
+
 /* Region List Horizontally Aligned ul */
-.regionList, .languageList {
-    list-style-type: none !important;
-    overflow: hidden !important;
-    color: black !important;
+.regionList {
+    /* list-style-type: none !important;
+    overflow: hidden !important; */
+    color:#262626 !important;
+    margin-right: .5rem;
+    font-size: .85rem;
+    padding-bottom: 2rem !important;
 }
 
 ul > li {
     display: inline-block;
     /* You can also add some margins here to make it look prettier */
     zoom:1;
-   display:inline;
+    *display:inline;
     /* this fix is needed for IE7- */
 }
 
@@ -70,6 +112,7 @@ ul > li {
 
 .rectangleCardsContent {
     margin-top: 0 !important;
+    margin-right: 1.5rem !important;
     font-size: 14px !important;
     font-weight: normal;
     font-stretch: normal;
